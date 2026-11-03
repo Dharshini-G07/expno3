@@ -82,7 +82,7 @@ Display original color image, histogram, enhanced image, and enhanced histogram 
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-img = cv2.imread('apple.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('priya_grey.png', cv2.IMREAD_GRAYSCALE)
 plt.imshow(img, cmap='gray')
 plt.title('Original Image')
 plt.show()
@@ -95,7 +95,7 @@ plt.title('Equalized Histogram')
 plt.imshow(img_eq, cmap='gray')
 plt.title('Original Image')
 plt.show()
-img = cv2.imread('apple.jpg', cv2.IMREAD_COLOR)
+img = cv2.imread('priya_grey.png', cv2.IMREAD_COLOR)
 img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 img_hsv[:,:,2] = cv2.equalizeHist(img_hsv[:, :, 2])
 img_eq = cv2.cvtColor(img_hsv, cv2.COLOR_HSV2BGR)
@@ -114,36 +114,23 @@ plt.subplot(122); plt.hist(img_eq.ravel(),256,range = [0, 256]); plt.title('Hist
 
 ##  Output
 
-### Grayscale Histogram Equalization
 
-- Original grayscale image is displayed  
-- Histogram of original grayscale image is plotted  
-- Enhanced image after histogram equalization is displayed  
-- Histogram of enhanced grayscale image shows improved contrast  
+<img width="253" height="436" alt="image" src="https://github.com/user-attachments/assets/7fefc5da-65ac-4d19-88fd-c5ff457cf26a" />
 
-### Color Image Histogram Equalization
+<img width="584" height="440" alt="image" src="https://github.com/user-attachments/assets/633eaef7-b178-4bba-897a-170c9405cf6e" />
 
-- Original color image is displayed  
-- Histogram of B, G, R channels is plotted  
-- Enhanced image after HSV-based equalization is displayed  
-- Histogram of enhanced image shows better intensity distribution
+<img width="580" height="450" alt="image" src="https://github.com/user-attachments/assets/d486ae2e-507d-4e6a-9bad-a5c33a37b5f7" />
+
+<img width="249" height="437" alt="image" src="https://github.com/user-attachments/assets/c3aa9704-aa49-4fe9-bff9-2de0e1cfff40" />
+
+<img width="579" height="434" alt="image" src="https://github.com/user-attachments/assets/673ef056-28b6-46e0-bf8d-d10beabb3946" />
+
+<img width="272" height="440" alt="image" src="https://github.com/user-attachments/assets/13afc5da-c0b5-443f-823f-c7c966052b59" />
+
+<img width="1061" height="425" alt="image" src="https://github.com/user-attachments/assets/1dedb0d9-9d1e-4635-bfa1-0d173fa5b2cf" />
 
 
-<img width="557" height="388" alt="image" src="https://github.com/user-attachments/assets/af334804-96b7-4377-a000-bc7ce4722251" />
 
-<img width="560" height="439" alt="image" src="https://github.com/user-attachments/assets/852046d9-7c2d-4a79-9fbe-beb062a292eb" />
-
-<img width="557" height="458" alt="image" src="https://github.com/user-attachments/assets/fa3afd6f-0d2d-4a22-ba61-0436087df3b4" />
-
-<img width="544" height="384" alt="image" src="https://github.com/user-attachments/assets/e1fdd680-2cb1-469e-b6f4-64310e4d691d" />
-
-<img width="553" height="384" alt="image" src="https://github.com/user-attachments/assets/81de27a0-bef9-4f55-84fe-d0ec2b67a0bd" />
-
-<img width="578" height="426" alt="image" src="https://github.com/user-attachments/assets/997965db-8017-4542-a1fd-25108d029331" />
-
-<img width="1090" height="323" alt="image" src="https://github.com/user-attachments/assets/ac8d2adb-aeb0-464a-92c9-f9c06f00724e" />
-
-<img width="1099" height="361" alt="image" src="https://github.com/user-attachments/assets/f994eadf-3b02-461c-8ff8-66dd840d3984" />
 
 
 ---
